@@ -1,0 +1,177 @@
+.titulo {
+  text-align: center;
+  color: #4300e0;
+  display: block;
+  font-size: 55px;
+  font-weight: normal;
+  letter-spacing: -3.5px;
+  line-height: 1em;
+}
+
+#selecione {
+  text-align: center;
+  font-family: Georgia, serif;
+  color: 000000;
+  font-size: 30px;
+  line-height: 1em;
+  margin-bottom: 3%;
+}
+
+.opcoes {
+  margin-left: 1%;
+  font-family: 'Open Sans';
+  color: #ffffff;
+  text-transform: Capitalize;
+  text-decoration: none;
+  background: #4300e0;
+  padding: 20px;
+  border-radius: 15px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+}
+
+.opcoes:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+}
+
+
+.moedas {
+  position: relative;
+  display: inline;
+  left: 15%;
+  z-index: 1;
+}
+
+
+.content-table {
+  border-collapse: collapse;
+  margin-left: 35%;
+  margin-top: 5%;
+  font-size: 0.9em;
+  min-width: 400px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr {
+  background-color: #4300e0;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+input {
+  margin: 15px 0;
+  padding: 15px 10px;
+  width: 30%;
+  outline: none;
+  border: 1px solid #bbb;
+  border-radius: 20px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -ms-transition: 0.2s ease all;
+  -o-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+}
+
+#titulo-cotacao {
+  text-align: center;
+  font-family: Georgia, serif;
+  color: #4300e0;
+  font-size: 30px;
+  line-height: 1em;
+  margin: 0 0 0 60px;
+}
+
+.btn {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #4300e0;
+  border-radius: 0.6em;
+  color: #4300e0;
+  cursor: pointer;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.btn:hover,
+.btn:focus {
+  color: #fff;
+  outline: 0;
+}
+
+.first {
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.first:hover {
+  box-shadow: 0 0 40px 40px #2596be inset;
+}
+
+
+span {
+  font-size: 25px;
+  background: linear-gradient(to right,
+      hsl(98 100% 62%),
+      hsl(204 100% 59%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .content-table {
+    position: relative;
+    left: -25%;
+  }
+
+  .moedas {
+    left: 0%;
+  }
+
+}
